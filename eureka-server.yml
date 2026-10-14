@@ -1,6 +1,16 @@
 spring:
   application:
     name: eureka-server
+  config:
+    import: "configserver:http://cloud-config:8888"   # ← AÑADIR
+  cloud:
+    config:
+      fail-fast: true                                   # ← AÑADIR
+      retry:
+        max-attempts: 10
+        initial-interval: 2000
+        max-interval: 5000
+        multiplier: 1.5
 
 server:
   port: 8761
@@ -19,5 +29,5 @@ management:
       exposure:
         include: info, health, prometheus
   info:
-    env: 
+    env:
       enabled: true
