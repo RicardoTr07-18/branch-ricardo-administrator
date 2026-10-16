@@ -7,7 +7,7 @@ spring:
     banner-mode: off                 # Desactiva el banner de Spring Boot
 
   datasource:
-    url: jdbc:container-postgres://localhost:5432/Auth
+    url: url: jdbc:postgresql://container-postgres:5432/Auth
     username: postgres
     password: 1234
     hikari:
