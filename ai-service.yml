@@ -4,7 +4,7 @@ spring:
 
   ai:
     ollama:
-      base-url: http://localhost:11434
+      base-url: http://container-ollama:11434
       chat:
         model: tinyllama
 
@@ -15,7 +15,7 @@ spring:
 
   data:
     redis:
-      host: localhost
+      host: container-redis
       port: 6379
       timeout: 2s
 
