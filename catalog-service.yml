@@ -7,7 +7,7 @@ spring:
     banner-mode: off                 # Evita carga del banner ASCII
 
   datasource:
-    url: jdbc:postgresql://192.168.18.82:5432/catalog
+    url: jdbc:postgresql://192.168.100.22/catalog
     username: postgres
     password: 1234
     hikari:
